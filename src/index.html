@@ -66,39 +66,34 @@
                 </div>
             </div>
         </div>
-        <div class="navbar bg-white shadow-sm fixed-top">
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
-                        viewBox="0 0 24 24" focusable="false">
-                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                        <circle cx="12" cy="13" r="4" /></svg>
-                    <strong>Forum</strong>
+                <a href="#" class="navbar-brand text-primary">
+                    <i class="far fa-comments mr-3"></i> Mixcore Community
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div> -->
+                <div class="navbar-nav">
+                    <form class="form-inline">
+                        <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                    <a class="nav-item nav-link active" href="#">Signup</a>
+                    <a class="nav-item nav-link" href="#">Login</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <main role="main" class=" mt-5">
-        <!-- 
-        <section class="jumbotron text-center mb-0 mt-5">
-            <div class="container">
-                <h1 class="jumbotron-heading">Album example</h1>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
-                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                    entirely.</p>
-                <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                </p>
-            </div>
-        </section> -->
-
+    <main role="main" class="">
         <div class="forum py-5 bg-light">
             <div class="container">
                 <div class="row mb-3">
@@ -107,7 +102,7 @@
                     </div>
                     <div class="col">
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Sort
                             </button>
@@ -116,110 +111,329 @@
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
+                            <!-- <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">Left</button>
+                                <button type="button" class="btn btn-secondary">Middle</button>
+                                <button type="button" class="btn btn-secondary">Right</button>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-3">
-                        <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse"
-                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Collapsible Group Item #1
-                                        </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#"><i class="far fa-comments mr-3"></i>All Discussion</a>
+                            </li>
+                            <li class="nav-item mb-3">
+                                <a class="nav-link pl-0" href="#"><i class="fas fa-tags mr-3"></i>Tags</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" class="nav-link pl-0 text-danger collapsed"
+                                    href="#collapseSupport" tabindex="-1" aria-disabled="true" data-toggle="collapse"
+                                    aria-expanded="false" aria-controls="collapseSupport"><i
+                                        class="far fa-life-ring mr-3"></i>Support</a>
+                                <ul class="nav flex-column pl-5 collapse" id="collapseSupport" class="collapse"
+                                    aria-labelledby="headingOne">
+                                    <li class="nav-item">
+                                        <a class="nav-link pl-0" href="#"><small>Installation</small></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0 text-danger collapsed" href="#collapseDev" tabindex="-1"
+                                    aria-disabled="true" data-toggle="collapse" aria-expanded="false"
+                                    aria-controls="collapseDev"><i class="fas fa-code mr-3"></i>Dev</a>
+                                <ul class="nav flex-column pl-5 collapse" id="collapseDev" class="collapse"
+                                    aria-labelledby="headingOne">
+                                    <li class="nav-item">
+                                        <a class="nav-link pl-0" href="#"><small>Theming</small></a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="row my-2">
+                            <a href="#" class="col-1 pr-0">
+                                <img src="https://avatars2.githubusercontent.com/u/3785721?s=60&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <h6><a href="#">Here's our developer blog for the next release.</a></h6>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> Brian replied an hour
+                                    ago</small>
+                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use...</small></p>
                             </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            Collapsible Group Item #2
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                            <div class="col-4 p-0">
+                                <div class="btn-toolbar btn-toolbar-sm float-right" role="toolbar"
+                                    aria-label="Toolbar with button groups">
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-primary"><small><i
+                                                    class="far fa-life-ring mr-2"></i>Support</small></button>
+                                        <button type="button"
+                                            class="btn btn-secondary"><small>Installation</small></button>
+                                        <button type="button"
+                                            class="btn btn-success"><small><i class="far fa-check-circle"></i></small></button>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            Collapsible Group Item #3
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                            557</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="row">
+                        <div class="row my-2">
                             <a href="#" class="col-1 pr-0">
-                                <img src="https://via.placeholder.com/50"
+                                <img src="https://avatars1.githubusercontent.com/u/5327699?s=180&v=4"
                                     class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
                             </a>
                             <div class="col">
                                 <h6>Here's our developer blog for the next release.</h6>
-                                <small class="text-muted"><i class="fas fa-reply"></i> Brian replied an hour ago</small>
-                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta 10
-                                    will be a very important
-                                    release, not in terms of what it contains, but what it requires. We are going to
-                                    use...</small></p>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> Brian replied an hour
+                                    ago</small>
+                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use...</small></p>
                             </div>
-                            <div class="col-3">
-
-                                    <div class="btn-group btn-group-sm float-right" role="group"
-                                        aria-label="Small button group">
-                                        <button type="button" class="btn btn-secondary">Left</button>
-                                        <button type="button" class="btn btn-secondary">Middle</button>
-                                        <button type="button" class="btn btn-secondary">Right</button>
+                            <div class="col-4 p-0">
+                                <div class="btn-toolbar btn-toolbar-sm float-right" role="toolbar"
+                                    aria-label="Toolbar with button groups">
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-danger"><small><i
+                                                    class="fas fa-code mr-2"></i>Dev</small></button>
+                                        <button type="button" class="btn btn-secondary"><small>Theming</small></button>
                                     </div>
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                            5</button>
+                                    </div>
+                                </div>
                             </div>
-
+                        </div>
+                        <div class="row my-2">
+                            <a href="#" class="col-1 pr-0">
+                                <img src="https://avatars3.githubusercontent.com/u/16921163?s=50&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <h6>Here's our developer blog for the next release.</h6>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> Brian replied an hour
+                                    ago</small>
+                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use...</small></p>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="btn-toolbar btn-toolbar-sm float-right" role="toolbar"
+                                    aria-label="Toolbar with button groups">
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-danger"><small><i
+                                                    class="fas fa-code mr-2"></i>Dev</small></button>
+                                        <button type="button" class="btn btn-secondary"><small>Theming</small></button>
+                                    </div>
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                            5</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <a href="#" class="col-1 pr-0">
+                                <img src="https://avatars2.githubusercontent.com/u/3785721?s=60&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <h6>Here's our developer blog for the next release.</h6>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> Brian replied an hour
+                                    ago</small>
+                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use...</small></p>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="btn-toolbar btn-toolbar-sm float-right" role="toolbar"
+                                    aria-label="Toolbar with button groups">
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-primary"><small><i
+                                                    class="far fa-life-ring mr-2"></i>Support</small></button>
+                                        <button type="button"
+                                            class="btn btn-secondary"><small>Installation</small></button>
+                                    </div>
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                            5</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <a href="#" class="col-1 pr-0">
+                                <img src="https://avatars1.githubusercontent.com/u/5327699?s=180&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <h6>Here's our developer blog for the next release.</h6>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> Brian replied an hour
+                                    ago</small>
+                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use...</small></p>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="btn-toolbar btn-toolbar-sm float-right" role="toolbar"
+                                    aria-label="Toolbar with button groups">
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-danger"><small><i
+                                                    class="fas fa-code mr-2"></i>Dev</small></button>
+                                        <button type="button" class="btn btn-secondary"><small>Theming</small></button>
+                                    </div>
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                            5</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <a href="#" class="col-1 pr-0">
+                                <img src="https://avatars3.githubusercontent.com/u/16921163?s=50&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <h6>Here's our developer blog for the next release.</h6>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> Brian replied an hour
+                                    ago</small>
+                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use...</small></p>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="btn-toolbar btn-toolbar-sm float-right" role="toolbar"
+                                    aria-label="Toolbar with button groups">
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-danger"><small><i
+                                                    class="fas fa-code mr-2"></i>Dev</small></button>
+                                        <button type="button" class="btn btn-secondary"><small>Theming</small></button>
+                                    </div>
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                            5</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <a href="#" class="col-1 pr-0">
+                                <img src="https://avatars2.githubusercontent.com/u/3785721?s=60&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <h6>Here's our developer blog for the next release.</h6>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> Brian replied an hour
+                                    ago</small>
+                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use...</small></p>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="btn-toolbar btn-toolbar-sm float-right" role="toolbar"
+                                    aria-label="Toolbar with button groups">
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-primary"><small><i
+                                                    class="far fa-life-ring mr-2"></i>Support</small></button>
+                                        <button type="button"
+                                            class="btn btn-secondary"><small>Installation</small></button>
+                                    </div>
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                            5</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <a href="#" class="col-1 pr-0">
+                                <img src="https://avatars1.githubusercontent.com/u/5327699?s=180&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <h6>Here's our developer blog for the next release.</h6>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> Brian replied an hour
+                                    ago</small>
+                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use...</small></p>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="btn-toolbar btn-toolbar-sm float-right" role="toolbar"
+                                    aria-label="Toolbar with button groups">
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-danger"><small><i
+                                                    class="fas fa-code mr-2"></i>Dev</small></button>
+                                        <button type="button" class="btn btn-secondary"><small>Theming</small></button>
+                                    </div>
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                            5</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <a href="#" class="col-1 pr-0">
+                                <img src="https://avatars3.githubusercontent.com/u/16921163?s=50&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <h6>Here's our developer blog for the next release.</h6>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> Brian replied an hour
+                                    ago</small>
+                                <p class="font-weight-light"><small>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use...</small></p>
+                            </div>
+                            <div class="col-4 p-0">
+                                <div class="btn-toolbar btn-toolbar-sm float-right" role="toolbar"
+                                    aria-label="Toolbar with button groups">
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                        <button type="button" class="btn btn-danger"><small><i
+                                                    class="fas fa-code mr-2"></i>Dev</small></button>
+                                        <button type="button" class="btn btn-secondary"><small>Theming</small></button>
+                                    </div>
+                                    <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                        <button type="button" class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                            5</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center">
+                                <button class="btn btn-sm btn-light"><i class="far fa-comment-dots"></i> Load
+                                    more</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -231,11 +445,9 @@
     <footer class="text-muted">
         <div class="container">
             <p class="float-right">
-                <a href="#">Back to top</a>
+                <small><a href="#"><i class="fas fa-arrow-up"></i> Back to top</a></small>
             </p>
-            <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-            <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a
-                    href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
+
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -245,6 +457,7 @@
     <script src="js/bootstrap.bundle.min.js"
         integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
         crossorigin="anonymous"></script>
+    <script src="vendors/fontawesome/js/all.min.js"></script>
 </body>
 
 </html>
