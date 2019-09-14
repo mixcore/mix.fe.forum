@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Community Board - Mixcore</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="css/mix.fe.forum.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="collapse" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Add some information about the album below, the author, or any other
+                            background context. Make it a few sentences long so folks can pick up some informative
+                            tidbits. Then, link them off to some social networking sites or contact information.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand text-primary">
+                    <i class="far fa-comments mr-3"></i> Mixcore Community
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div> -->
+                <div class="navbar-nav">
+                    <form class="form-inline">
+                        <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                    <a class="nav-item nav-link active" href="#">Signup</a>
+                    <a class="nav-item nav-link" href="#">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main role="main" class="mt-5">
+        <div class="forum py-5 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="row my-2">
+                            <a href="#" class="col-1 px-0 mr-2">
+                                <img src="https://avatars2.githubusercontent.com/u/3785721?s=60&amp;v=4"
+                                    class="img-fluid float-left rounded-circle" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <h5>Here's our developer blog for the next release.</h5>
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> <strong>Huy
+                                        Nguyen</strong>
+                                    created this post an hour
+                                    ago</small>
+                                <div class="description">
+                                    <p>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                    </p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="far fa-thumbs-up"></i> 16.5k</button>
+                                            <button type="button" onclick="$('.comment-form').toggle()"
+                                                class="btn btn-light"><i class="far fa-comment-dots"></i>
+                                                Add comment</button>
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="far fa-flag"></i> Report</button>
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="far fa-trash-alt"></i> Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 comment-form" style="display: none;">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <textarea rows="10" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row my-2">
+                            <a href="#" class="col-1 px-0 mr-2">
+                                <img src="https://avatars1.githubusercontent.com/u/5327699?s=60&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> <strong>Nhat
+                                        Hoang</strong>
+                                    replied an hour
+                                    ago</small>
+                                <div class="description">
+                                    <p>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                    </p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="far fa-thumbs-up"></i> 30k</button>
+                                            <button type="button" onclick="$('.reply-form').toggle()"
+                                                class="btn btn-light"><i class="fas fa-reply"></i>
+                                                Reply</button>
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="fas fa-check"></i> Solution</button>
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="far fa-flag"></i> Report</button>
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="far fa-trash-alt"></i> Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 reply-form" style="display: none;">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <textarea rows="3" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row my-2">
+                                    <a href="#" class="col-1 pr-0 mr-0">
+                                        <img src="https://avatars3.githubusercontent.com/u/16921163?s=30&v=4"
+                                            class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                                    </a>
+                                    <div class="col">
+                                        <small class="text-muted"><i class="far fa-comment-dots"></i> <strong>Si
+                                                Nguyen</strong>
+                                            replied an hour
+                                            ago</small>
+                                        <small class="reply-detail">
+                                            <div class="btn-group btn-group-sm float-right">
+                                                <a href="#" class="btn btn-light"><i class="far fa-flag"></i></a>
+                                                <a href="#" class="btn btn-light"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                            <p>Here's our developer blog for the next
+                                                release. Beta
+                                                10
+                                                will be a very important
+                                                release, not in terms of what it contains, but what it requires.
+                                                use...</p>
+                                        </small>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row my-2">
+                                    <a href="#" class="col-1 pr-0 mr-0">
+                                        <img src="https://avatars3.githubusercontent.com/u/5327699?s=30&v=4"
+                                            class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                                    </a>
+                                    <div class="col">
+                                        <small class="text-muted"><i class="far fa-comment-dots"></i> <strong>Hoang
+                                                Nguyen</strong>
+                                            replied an hour
+                                            ago</small>
+                                        <small class="reply-detail">
+
+                                            <div class="btn-group btn-group-sm float-right">
+                                                <a href="#" class="btn btn-light"><i class="far fa-flag"></i></a>
+                                                <a href="#" class="btn btn-light"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                            <p>Here's our developer blog for the next
+                                                release. Beta
+                                                10
+                                                will be a very important
+                                                release, not in terms of what it contains, but what it requires.
+                                                use...</p>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row my-2">
+                            <a href="#" class="col-1 px-0 mr-2">
+                                <img src="https://avatars1.githubusercontent.com/u/5327699?s=60&v=4"
+                                    class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                            </a>
+                            <div class="col">
+                                <small class="text-muted"><i class="far fa-comment-dots"></i> <strong>Nhat
+                                        Hoang</strong>
+                                    replied an hour
+                                    ago</small>
+                                <div class="description">
+                                    <p>Here's our developer blog for the next release. Beta
+                                        10
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                        will be a very important
+                                        release, not in terms of what it contains, but what it requires.
+                                        use
+                                    </p>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="far fa-thumbs-up"></i> 30k</button>
+                                            <button type="button" onclick="$('.reply-form').toggle()"
+                                                class="btn btn-light"><i class="fas fa-reply"></i>
+                                                Reply</button>
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="fas fa-check"></i> Solution</button>
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="far fa-flag"></i> Report</button>
+                                            <button type="button" class="btn btn-sm btn-light"><i
+                                                    class="far fa-trash-alt"></i> Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 reply-form" style="display: none;">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <textarea rows="3" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row my-2">
+                                    <a href="#" class="col-1 pr-0 mr-0">
+                                        <img src="https://avatars3.githubusercontent.com/u/16921163?s=30&v=4"
+                                            class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                                    </a>
+                                    <div class="col">
+                                        <small class="text-muted"><i class="far fa-comment-dots"></i> <strong>Si
+                                                Nguyen</strong>
+                                            replied an hour
+                                            ago</small>
+                                        <small class="reply-detail">
+                                            <div class="btn-group btn-group-sm float-right">
+                                                <a href="#" class="btn btn-light"><i class="far fa-flag"></i></a>
+                                                <a href="#" class="btn btn-light"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                            <p>Here's our developer blog for the next
+                                                release. Beta
+                                                10
+                                                will be a very important
+                                                release, not in terms of what it contains, but what it requires.
+                                                use...</p>
+                                        </small>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row my-2">
+                                    <a href="#" class="col-1 pr-0 mr-0">
+                                        <img src="https://avatars3.githubusercontent.com/u/5327699?s=30&v=4"
+                                            class="img-fluid float-left rounded-circle mr-4" alt="Responsive image">
+                                    </a>
+                                    <div class="col">
+                                        <small class="text-muted"><i class="far fa-comment-dots"></i> <strong>Hoang
+                                                Nguyen</strong>
+                                            replied an hour
+                                            ago</small>
+                                        <small class="reply-detail">
+
+                                            <div class="btn-group btn-group-sm float-right">
+                                                <a href="#" class="btn btn-light"><i class="far fa-flag"></i></a>
+                                                <a href="#" class="btn btn-light"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                            <p>Here's our developer blog for the next
+                                                release. Beta
+                                                10
+                                                will be a very important
+                                                release, not in terms of what it contains, but what it requires.
+                                                use...</p>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col text-center">
+                                <button class="btn btn-sm btn-light"><i class="far fa-comment-dots"></i> Load
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                        <div class="btn-toolbar btn-toolbar-sm" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group btn-group-sm mr-2" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-link"><small><i
+                                            class="far fa-life-ring mr-2"></i>Support</small></button>
+                                <button type="button"
+                                    class="btn btn-link text-secondary"><small>Installation</small></button>
+                                <button type="button" class="btn btn-link text-success"><small><i
+                                            class="far fa-check-circle"></i></small></button>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- <input class="range vertical-heighest-first round" type="range" min="0" max="1" step="0.1" value="1"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right my-5">
+                <small><a href="#"><i class="fas fa-arrow-up"></i> Back to top</a></small>
+            </p>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/bootstrap.bundle.min.js"
+        integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+        crossorigin="anonymous"></script>
+    <script src="vendors/fontawesome/js/all.min.js"></script>
+</body>
+
+</html>
